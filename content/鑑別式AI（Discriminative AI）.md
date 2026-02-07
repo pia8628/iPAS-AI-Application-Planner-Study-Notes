@@ -21,7 +21,7 @@ tags:
 P(y∣x)
 $$
 典型的鑑別式 AI 模型包括
--  [支援向量機](../AI知識/支持向量機(SVM).md)
+- [支援向量機](../AI知識/支持向量機(SVM).md)
 - [邏輯迴歸（Logistic Regression）](../AI知識/邏輯迴歸（Logistic%20Regression）.md)
 - [決策樹](../AI知識/決策樹.md)、[隨機森林](../AI知識/隨機森林(Random%20Forest）.md)
 - 深度學習中的[深度神經網路](../AI知識/深度學習-深度神經網路.md)等。

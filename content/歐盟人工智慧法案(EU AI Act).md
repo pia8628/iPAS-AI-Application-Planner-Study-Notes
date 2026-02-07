@@ -6,7 +6,7 @@ aliases:
 topic:
   - "[[../0. MOCs/3. AI 知識 MOC#AI基礎知識]]"
 source:
-source_ref:
+source_ref: https://linchew.com/2024/04/iso-iec-42001/
 created: 2025-12-08
 tags:
 ---
