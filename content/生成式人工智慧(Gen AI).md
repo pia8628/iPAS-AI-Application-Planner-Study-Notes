@@ -26,7 +26,7 @@ tags:
 ### 訓練階段
 1. 數據準備：數據蒐集→ [數據清洗](數據清洗.md) →數據預處理 ([數據轉換](數據轉換.md))
 2. 模型選擇與搭建
-	常見：[GAN](生成對抗網路（Generative%20Adversarial%20Networks）.md)、[VAE](變分自編碼器VAE.md)、[Transformer](Transformer架構.md) 
+	常見：[GAN](生成對抗網路（Generative%20Adversarial%20Networks）.md)、[VAE](變分自編碼器VAE.md)、[Transformer](Transformer架構.md)、[AR Model](自迴歸模型(AR%20Models).md)、[擴散模型(Diffusion)](擴散模型(Diffusion).md)
 3. 模型訓練
 	1. [損失函數（Loss Function）](損失函數（Loss%20Function）.md)：設計一個適當的損失函數，用來衡量模型生成的數據與真實數據之間的差異
 	2. 優化器：選擇一個優化器，如 Adam、SGD，用來更新模型的參數，使得模型生成的數據越來越接近真實數據。
@@ -59,7 +59,7 @@ tags:
 
 
 
-# 3 題模擬練習題
+# 模擬練習題
 
 ### 題目1：生成式人工智慧模型在生成回應時，主要依據的是哪一種機率分布？
 
@@ -93,5 +93,16 @@ D. 進行數據格式的轉換與清理
 **答案：B**  
 **詳解：**  
 微調階段針對特定任務進行調整，包括添加特定任務所需的新模型層、調整超參數等。這有助於模型更好地適應特定情境和需求。選項B描述的是為特定任務增加新層，屬於任務優化行為。
+
+### 題目 4：下列何者不是生成式 AI 核心技術？ 
+(A) Variational Autoencoders(VAE) 
+(B) Generative Adversarial Networks(GAN) 
+(C) Visual Geometry Group(VGG)
+(D) Autoregressive Models(AR Model)
+
+**答案：C  
+**詳解：**  
+VGG 是由 Oxford 的 Visual Geometry Group 提出的**卷積神經網路（CNN）架構**。VGG 的任務是回答：「這張圖是什麼？」，不是生成式技術。
+
 
 

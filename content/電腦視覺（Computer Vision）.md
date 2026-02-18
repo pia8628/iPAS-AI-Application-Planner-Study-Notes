@@ -24,7 +24,7 @@ tags:
 - **影像預處理（Image Preprocessing）**  
   包括去噪、增強、灰階轉換、二值化等，提升影像品質與後續辨識效果。
 - **特徵擷取（Feature Extraction）**  
-  從影像中抽取有意義的資訊，如邊緣、角點、紋理、顏色等，常用方法有 SIFT、HOG、ORB。
+  從影像中抽取有意義的資訊，如邊緣、角點、紋理、顏色等，常用方法有 SIFT、HOG、ORB。其中，**索伯濾波器（Sobel Filter）** 是一種經典的邊緣檢測技術，通過計算影像灰階值的梯度來強調邊緣區域，便於後續的邊緣分析與特徵辨識。
 - **影像分割（Image Segmentation）**  
   將影像切割成多個區域或物件，如基於閾值、區域生長、深度學習語義分割（如 U-Net、Mask R-CNN）。
 - **物件偵測（Object Detection）**  
@@ -77,3 +77,5 @@ tags:
    
    **答案：A**  
    **解析：** YOLO（You Only Look Once）是實時物件偵測的代表性模型，RNN和LSTM多用於序列資料，GAN則用於生成模型。
+
+
