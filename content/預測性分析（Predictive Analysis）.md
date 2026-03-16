@@ -23,7 +23,7 @@ tags:
 
 ### 分類模型 （Classification Models）
 - 特點與用途：用於將數據分為不同類別。 
-- 方法：[[決策樹]]、[[隨機森林(Random Forest）|隨機森林]]、支援向量機（Support Vector Machine, [[支持向量機(SVM)]]）、[[深度學習-深度神經網路|深度學習]] （如神經網路等）。
+- 方法：[[決策樹]]、[[隨機森林（Random Forest）|隨機森林]]、支援向量機（Support Vector Machine, [[支持向量機(SVM)]]）、[[深度學習-深度神經網路|深度學習]] （如神經網路等）。
 - 應用場景：信用風險評估、疾病診斷、用戶行為預測。
 
 ### 時間序列模型 （Time Series Models） 
@@ -33,7 +33,7 @@ tags:
 
 ### 集成學習方法 （Ensemble Methods） 
 - 特點與用途：結合多個模型提高預測準確性。
-- 方法：[[隨機森林(Random Forest）|隨機森林]]、梯度提升機（Gradient Boosting Machine, GBM）、極限梯度提升（eXtreme Gradient Boosting, XGBoost）等。
+- 方法：[[隨機森林（Random Forest）|隨機森林]]、梯度提升機（Gradient Boosting Machine, GBM）、極限梯度提升（eXtreme Gradient Boosting, XGBoost）等。
 
 # 🔗 應用領域
 

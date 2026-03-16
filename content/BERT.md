@@ -16,7 +16,7 @@ tags:
 # 定義（Definition）
 基於 Transformer 編碼器的雙向預訓練語言模型，用遮罩填空（MLM）和句子關係判斷（NSP）學會上下文，再微調到各種 NLP 任務，常當作語意特徵骨架。
 # 原理與技術
-BERT 由多層 **Transformer Encoder** 堆疊，含 **多頭自注意力(Multi-head Self-Attention)**、殘差與 LayerNorm，能同時讀左右文。輸入含 **[CLS]、[SEP] 特殊符號**、**位置編碼(Position Embedding)** 與 **段落編碼(Segment Embedding)**，CLS 向量常拿來做句子級任務。預訓練的 **MLM(Masked Language Modeling)** 隨機遮罩 15% token，迫使模型用上下文猜字；**NSP(Next Sentence Prediction)** 判斷句子是否連續，幫助理解篇章關係（有些改成 SOP 或移除 NSP）。因為是雙向編碼，它比單向 LM 更適合理解與抽取；但它不是生成式模型。微調時通常加一個小型分類頭或 span 頭，需注意 **warmup、小學習率、梯度裁剪**，避免破壞預訓練特徵。長序列受 512 token 限制，可用 **滑窗切片** 或 **Longformer/DeBERTa** 等長上下文變體。效能優化可用 **參數高效微調([LoRA](../00.%20Inbox/LoRA%20低秩適應.md)/Prefix Tuning/Adapters)**、**模型蒸餾(DistilBERT)** 或 **量化(8-bit/4-bit)**。中文場景常用 **Whole Word Masking** 或結合 **詞彙/拼音特徵** 提升表徵。
+BERT 由多層 **Transformer Encoder** 堆疊，含 **多頭自注意力(Multi-head Self-Attention)**、殘差與 LayerNorm，能同時讀左右文。輸入含 **[CLS]、[SEP] 特殊符號**、**位置編碼(Position Embedding)** 與 **段落編碼(Segment Embedding)**，CLS 向量常拿來做句子級任務。預訓練的 **MLM(Masked Language Modeling)** 隨機遮罩 15% token，迫使模型用上下文猜字；**NSP(Next Sentence Prediction)** 判斷句子是否連續，幫助理解篇章關係（有些改成 SOP 或移除 NSP）。因為是雙向編碼，它比單向 LM 更適合理解與抽取；但它不是生成式模型。微調時通常加一個小型分類頭或 span 頭，需注意 **warmup、小學習率、梯度裁剪**，避免破壞預訓練特徵。長序列受 512 token 限制，可用 **滑窗切片** 或 **Longformer/DeBERTa** 等長上下文變體。效能優化可用 **參數高效微調([LoRA](LoRA%20低秩適應.md)/Prefix Tuning/Adapters)**、**模型蒸餾(DistilBERT)** 或 **量化(8-bit/4-bit)**。中文場景常用 **Whole Word Masking** 或結合 **詞彙/拼音特徵** 提升表徵。
 # 應用領域
 BERT 核心是產生高品質語意向量，常見用法：
 - **文本分類**：情感、意圖、主題判斷，只需在 CLS 上接分類層。若類別不平衡，可調權重或用 focal loss。
