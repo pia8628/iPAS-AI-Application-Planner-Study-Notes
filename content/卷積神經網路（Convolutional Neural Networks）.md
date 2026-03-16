@@ -32,7 +32,7 @@ tags:
 常見結構包含 **卷積層+批次正規化(BatchNorm)+ReLU** 的基本組合，並用 **殘差(Residual) 或稠密連接(Dense)** 避免深層梯度消失。
 **步幅(Stride)、填補(Padding)** 控制特徵圖大小；**1x1 卷積** 用於降維或跨通道混合。
 
-訓練需考慮 **資料增強(Data Augmentation)**（翻轉、裁切、顏色抖動）、**正規化(L2/Dropout)**、**學習率排程與權重衰減**。
+訓練需考慮 **資料增強(Data Augmentation)**（翻轉、裁切、顏色抖動）、[正則化](過擬合（Overfitting）.md#正則化（Regularization）) (L2/Dropout)、**學習率排程與權重衰減**。
 經典架構有 **LeNet、VGG、ResNet、DenseNet、MobileNet、EfficientNet**；物件偵測則常用 **FPN、Anchor/Anchor-free、NMS**。在時序或語音上，可把一維序列視為「時間×頻率」的圖（如 Mel 頻譜），用一維或二維卷積擷取局部模式。部署時可套用 **量化、剪枝、蒸餾** 讓模型更輕量化。
 # 應用領域
 - **影像分類**：醫療影像病灶、瑕疵檢測、品質檢驗。

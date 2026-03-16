@@ -16,7 +16,7 @@ tags:
 - HITL：人在迴圈上
 - HOTL：人在迴圈上
 英文名稱：
-- HIC：Human-In-The-Loop 
+- HIC：Human-In-Control
 - HITL：Human-In-The-Loop
 - HOTL：Human-On-The-Loop
 # 📌 定義（Definition）
@@ -26,6 +26,7 @@ tags:
   指在系統運作過程中，人類直接參與決策或控制環節，系依賴人類的即時反饋與判斷。
 - HOTL：人類在旁監督
   指系統自運行中，人類監控系統狀態並在必要時介入，但大部分時間系統自動行決策。
+  如：發生異常時通知人類介入
 
 # ⭐原理與技術
 - **HIC**  

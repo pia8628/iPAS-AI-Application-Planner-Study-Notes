@@ -78,7 +78,7 @@ LASSO 的特性是：
 
 所以 LASSO 同時做到：
 - 建模    
-- 正則化    
+- [正則化（Regularization）](過擬合（Overfitting）.md#正則化（Regularization）)   
 - 特徵選擇    
 ### 嵌入法的特性（考試重點）
 - 優點：    

@@ -19,7 +19,7 @@ tags:
 DNN 透過 **前饋(Feedforward)** 層層計算，再用 **反向傳遞(Backpropagation)** 依損失梯度更新權重。多層堆疊能表示高維非線性關係，但也容易 **過擬合** 或 **梯度消失/爆炸**。常見技巧：
 - **激活函數**：ReLU/Leaky ReLU/GELU 讓梯度通暢；Sigmoid/Tanh 容易飽和。
 - **初始化**：Xavier/He 初始化保持方差穩定。
-- **正規化**：BatchNorm/LayerNorm/Dropout/L2，減少內部共變異、提升泛化。
+- [正則化（Regularization）](過擬合（Overfitting）.md#正則化（Regularization）)：BatchNorm/LayerNorm/Dropout/L2，減少內部共變異、提升泛化。
 - **優化器**：SGD+動量、Adam/AdamW；配合 **學習率排程、warmup、權重衰減**。
 - **寬度與深度取捨**：太深會梯度弱化，殘差(Residual)或跳接能改善；太寬會增加參數但可提升表現。
 - **早停與[[交叉驗證]]**：監控驗證集避免過擬合。
