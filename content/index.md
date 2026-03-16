@@ -39,7 +39,7 @@
 - 資料類型
 	- 結構化資料 Structured Data，如 SQL
 	- 半結構化資料 Semi-structured Data，如 CSV, JSON, XML (用於 API 傳輸)
-	- 非結構化資料 Unstructured Data，需要透過 [NLP](../00.%20Inbox/自然語言處理（Natural%20Language%20Process)、[CV](電腦視覺（Computer%20Vision）.md) 、語音辨識等 AI 技術處理
+	- 非結構化資料 Unstructured Data，需要透過 [NLP](自然語言處理（Natural%20Language%20Process).md)、[CV](電腦視覺（Computer%20Vision）.md) 、語音辨識等 AI 技術處理
 - 資料型態
 	- 文字型
 	- 數字型
@@ -116,4 +116,3 @@
 - [生成式AI導入評估](生成式AI導入評估.md)
 - [生成式AI導入規劃](生成式AI導入規劃.md)
 - [生成式AI風險管理](生成式AI風險管理.md)
-
